@@ -25,9 +25,7 @@ A simple web application to help you bill tuition hour details and generate invo
 3. View the entries and summary.
 4. Click "Save as PDF" to download the invoice.
 
-## Demo
 
-You can view a live demo of the Tuition Billing application [here](#).
 
 ## Installation
 
