@@ -51,5 +51,5 @@ This project is licensed under the MIT License.
 
 ## Author
 
-ALAN CYRIL SUNNY
+ALAN CYRIL
 
