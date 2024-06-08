@@ -53,11 +53,5 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Your Name
+ALAN CYRIL SUNNY
 
-## Acknowledgements
-
-Special thanks to:
-
-- Alan Cyril Sunny for the inspiration and support.
-- Open-source community for their valuable contributions.
