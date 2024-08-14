@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuition Billing</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Tuition Billing</h1>
-        <form id="tuitionForm">
-            <label for="studentName">Student Name:</label>
-            <input type="text" id="studentName" required>
-
-            <label for="date">Date:</label>
-            <input type="date" id="date" required>
-
-            <label for="hours">Hours:</label>
-            <input type="number" id="hours" min="0" step="0.1" required>
-
-            <button type="button" onclick="addEntry()">Add Entry</button>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Tuition Billing</h1>
+        <form id="tuitionForm" class="mb-4">
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="rate">Rate per Hour:</label>
+                <select id="rate" class="form-control">
+                    <option value="150">₹150</option>
+                    <option value="200">₹200</option>
+                    <option value="250">₹250</option>
+                    <option value="300">₹300</option>
+                </select>
+            </div>
+            <button type="button" id="lockDetailsBtn" class="btn btn-primary btn-block mb-3">Lock Details</button>
+            <div class="form-group">
+                <label for="month">Month:</label>
+                <input type="month" id="month" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="hours">Hours:</label>
+                <input type="number" id="hours" class="form-control" min="0" step="0.1" required>
+            </div>
+            <button type="button" onclick="addEntry()" id="addEntryBtn" class="btn btn-success btn-block" disabled>Add Entry</button>
         </form>
-
-        <h2>Entries</h2>
-        <table id="entriesTable">
-            <thead>
+        <h2 class="text-center">Entries</h2>
+        <table id="entriesTable" class="table table-striped mt-3">
+            <thead class="thead-dark">
                 <tr>
                     <th>Date</th>
                     <th>Hours</th>
@@ -33,14 +50,15 @@
             <tbody>
             </tbody>
         </table>
-
-        <h2>Summary</h2>
-        <p>Total Hours: <span id="totalHours">0</span></p>
-        <p>Total Bill: ₹<span id="totalBill">0</span></p>
-
-        <button onclick="generatePDF()">Save as PDF</button>
+        <h2 class="text-center">Summary</h2>
+        <div class="text-center">
+            <p>Total Hours: <span id="totalHours">0</span></p>
+            <p>Total Bill: <span id="totalBill">0</span></p>
+        </div>
+        <button onclick="generatePDF()" class="btn btn-info btn-block mt-3">Save as PDF</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.19/jspdf.plugin.autotable.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
