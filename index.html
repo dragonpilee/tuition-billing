@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuition Billing</title>
+    <title>Tuition Billing System</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Tuition Billing</h1>
+        <h1 class="text-center mb-4">Tuition Billing System</h1>
         <form id="tuitionForm" class="mb-4">
             <div class="form-group">
                 <label for="studentName">Student Name:</label>
@@ -37,7 +37,8 @@
                 <label for="hours">Hours:</label>
                 <input type="number" id="hours" class="form-control" min="0" step="0.1" required>
             </div>
-            <button type="button" onclick="addEntry()" id="addEntryBtn" class="btn btn-success btn-block" disabled>Add Entry</button>
+            <button type="button" onclick="addOrUpdateEntry()" id="addEntryBtn" class="btn btn-success btn-block" disabled>Add Entry</button>
+            <button type="button" onclick="updateEntry()" id="updateEntryBtn" class="btn btn-warning btn-block" style="display: none;">Update Entry</button>
         </form>
         <h2 class="text-center">Entries</h2>
         <table id="entriesTable" class="table table-striped mt-3">
@@ -45,13 +46,13 @@
                 <tr>
                     <th>Date</th>
                     <th>Hours</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
-        <h2 class="text-center">Summary</h2>
-        <div class="text-center">
+        <div class="text-center mt-3">
             <p>Total Hours: <span id="totalHours">0</span></p>
             <p>Total Bill: <span id="totalBill">0</span></p>
         </div>
