@@ -35,35 +35,38 @@ The Tuition Billing Application allows users to manage and generate billing stat
    
 ## Usage
 
-Enter Student Details:
+1. Enter Student Details:
 
 Input the student’s name.
 Select the rate per hour from the dropdown.
-Lock Details:
+
+2. Lock Details:
 
 Click the "Lock Details" button to finalize student details and enable entry addition.
-Add Entries:
+3. Add Entries:
 
 Enter the month, date, and hours for each session.
 Click "Add Entry" to add the entry to the list.
-View Summary:
+4. View Summary:
 
 The total hours and total bill will be automatically updated.
 Generate PDF:
 
-Click "Save as PDF" to generate and download a PDF report of the billing statement.
-Files
+5. Click "Save as PDF" to generate and download a PDF report of the billing statement.
+
+## Files
 index.html: Main HTML file for the application.
+
 styles.css: Custom styles for the application.
+
 script.js: JavaScript file for functionality and interactivity.
-License
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Acknowledgments
 Bootstrap for styling and responsiveness.
 jsPDF and jsPDF-AutoTable for PDF generation.
-Contact
-For any questions or issues, please contact your-email@example.com
 
 ## How to Contribute
 
@@ -74,10 +77,6 @@ Contributions are welcome! Here's how you can contribute to this project:
 3. Commit your changes (`git commit -am 'Add some feature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Author
 
