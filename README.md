@@ -66,4 +66,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## 🎓 Credits
 
-Project developed by **[Alan Cyril](https://yourportfolio.com)**.
+Project developed by **[Alan Cyril]**.
