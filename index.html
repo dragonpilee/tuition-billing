@@ -15,6 +15,12 @@
                 <label for="studentName">Student Name:</label>
                 <input type="text" id="studentName" class="form-control" required>
             </div>
+
+            <div class="form-group">
+                <label for="previousBalance">Previous Balance (if any):</label>
+                <input type="number" id="previousBalance" class="form-control" value="0" min="0" step="0.1">
+            </div>
+
             <div class="form-group">
                 <label for="rate">Rate per Hour:</label>
                 <select id="rate" class="form-control">
@@ -25,6 +31,7 @@
                 </select>
             </div>
             <button type="button" id="lockDetailsBtn" class="btn btn-primary btn-block mb-3">Lock Details</button>
+
             <div class="form-group">
                 <label for="month">Month:</label>
                 <input type="month" id="month" class="form-control" required>
@@ -40,6 +47,7 @@
             <button type="button" onclick="addOrUpdateEntry()" id="addEntryBtn" class="btn btn-success btn-block" disabled>Add Entry</button>
             <button type="button" onclick="updateEntry()" id="updateEntryBtn" class="btn btn-warning btn-block" style="display: none;">Update Entry</button>
         </form>
+
         <h2 class="text-center">Entries</h2>
         <table id="entriesTable" class="table table-striped mt-3">
             <thead class="thead-dark">
@@ -49,13 +57,15 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
-            </tbody>
+            <tbody></tbody>
         </table>
+
         <div class="text-center mt-3">
             <p>Total Hours: <span id="totalHours">0</span></p>
             <p>Total Bill: <span id="totalBill">0</span></p>
+            <p>Grand Total (Including Previous Balance): <span id="grandTotal">0</span></p>
         </div>
+
         <button onclick="generatePDF()" class="btn btn-info btn-block mt-3">Save as PDF</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -63,3 +73,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
