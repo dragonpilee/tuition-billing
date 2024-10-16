@@ -135,11 +135,11 @@ function generatePDF() {
     doc.setFontSize(12);
     doc.text(`Student Name: ${studentName}`, 20, 40);
     doc.text(`Month: ${month}`, 20, 50);
-    doc.text(`Rate per Hour: ₹${ratePerHour}`, 20, 60);
+    doc.text(`Rate per Hour: ${ratePerHour}`, 20, 60);
 
     // Conditionally add Previous Balance only if it's greater than 0
     if (previousBalance > 0) {
-        doc.text(`Previous Balance: ₹${previousBalance.toFixed(2)}`, 20, 70);
+        doc.text(`Previous Balance: ${previousBalance.toFixed(2)}`, 20, 70);
     }
 
     doc.autoTable({
@@ -150,8 +150,8 @@ function generatePDF() {
 
     const finalY = doc.lastAutoTable.finalY + 10;
     doc.text(`Total Hours: ${totalHours}`, 20, finalY);
-    doc.text(`Total Bill: ₹${totalBill}`, 20, finalY + 10);
-    doc.text(`Grand Total${previousBalance > 0 ? ' (Including Previous Balance)' : ''}: ₹${grandTotal}`, 20, finalY + 20);
+    doc.text(`Total Bill: ${totalBill}`, 20, finalY + 10);
+    doc.text(`Grand Total${previousBalance > 0 ? ' (Including Previous Balance)' : ''}: ${grandTotal}`, 20, finalY + 20);
 
     doc.setFontSize(10);
     doc.text('Digitally signed by Alan Cyril Sunny', 105, doc.internal.pageSize.height - 10, { align: 'center' });
