@@ -137,7 +137,6 @@ function generatePDF() {
     doc.text(`Month: ${month}`, 20, 50);
     doc.text(`Rate per Hour: ${ratePerHour}`, 20, 60);
 
-    // Conditionally add Previous Balance only if it's greater than 0
     if (previousBalance > 0) {
         doc.text(`Previous Balance: ${previousBalance.toFixed(2)}`, 20, 70);
     }
@@ -145,7 +144,7 @@ function generatePDF() {
     doc.autoTable({
         head: [['Date', 'Hours']],
         body: entries.map(entry => [entry.date, entry.hours]),
-        startY: previousBalance > 0 ? 80 : 70,  // Adjust Y position based on the presence of previous balance
+        startY: previousBalance > 0 ? 80 : 70,
     });
 
     const finalY = doc.lastAutoTable.finalY + 10;
@@ -167,4 +166,19 @@ function toggleAddEntryButton() {
     const hours = document.getElementById('hours').value;
     document.getElementById('addEntryBtn').disabled = !(date && hours);
 }
+
+// Month selection restricts the date selection to that month
+document.getElementById('month').addEventListener('input', function() {
+    const selectedMonth = this.value; // Format: YYYY-MM
+    const year = selectedMonth.split('-')[0];
+    const month = selectedMonth.split('-')[1];
+
+    const firstDay = `${year}-${month}-01`;
+    const lastDay = new Date(year, month, 0).toISOString().split('T')[0]; // Last day of the month
+
+    const dateInput = document.getElementById('date');
+    dateInput.min = firstDay;
+    dateInput.max = lastDay;
+    dateInput.value = ''; // Clear any previously selected date
+});
 

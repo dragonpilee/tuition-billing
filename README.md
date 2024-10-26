@@ -3,6 +3,7 @@
 
 A streamlined solution for managing tuition billing with ease. The **Tuition Billing System** allows teachers to input student details, calculate session fees based on hourly rates, and generate professional PDF invoices. It supports tracking previous balances and automatically calculates grand totals. 
 
+![Screenshot](https://user-images.githubusercontent.com/your-screenshot.png) <!-- Optionally add a screenshot or a preview image -->
 
 ## ✨ Features
 
@@ -19,7 +20,9 @@ A streamlined solution for managing tuition billing with ease. The **Tuition Bil
 - JavaScript (with jsPDF & AutoTable libraries)
 - Bootstrap 4.5
 
+## 🚀 Demo
 
+You can try out the Tuition Billing System [here](https://example-link-to-demo.com).
 
 ## 📦 Installation & Setup
 
@@ -48,7 +51,9 @@ To run this project locally, follow these steps:
 3. **Include Previous Balance** (if applicable): Enter any outstanding balance from previous months.
 4. **Generate PDF Invoice**: Automatically generate a PDF invoice with the click of a button.
 
+## 📄 Example Invoice
 
+![PDF Invoice Example](https://user-images.githubusercontent.com/your-invoice-example.png) <!-- Example PDF image -->
 
 ## 🧑‍💻 Contributing
 
@@ -66,4 +71,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## 🎓 Credits
 
-Project developed by **Alan Cyril**.
+Project developed by **[Your Name](https://yourportfolio.com)**.
