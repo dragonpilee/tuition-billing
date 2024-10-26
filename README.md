@@ -47,9 +47,7 @@ This is a simple web-based application for managing student tuition billing. It 
 
 6. **Generate PDF**: Once you've finished adding entries, click "Save as PDF" to generate a detailed bill for the student, including hours worked and total amounts.
 
-## Example
 
-![Screenshot of Application](screenshot.png)
 
 ## File Structure
 
