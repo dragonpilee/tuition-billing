@@ -3,7 +3,6 @@
 
 A streamlined solution for managing tuition billing with ease. The **Tuition Billing System** allows teachers to input student details, calculate session fees based on hourly rates, and generate professional PDF invoices. It supports tracking previous balances and automatically calculates grand totals. 
 
-![Screenshot](https://user-images.githubusercontent.com/your-screenshot.png) <!-- Optionally add a screenshot or a preview image -->
 
 ## ✨ Features
 
@@ -71,4 +70,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## 🎓 Credits
 
-Project developed by **[Your Name](https://yourportfolio.com)**.
+Project developed by **Alan Cyril**.
