@@ -52,7 +52,7 @@ To run this project locally, follow these steps:
 
 ## 🧑‍💻 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/tuition-billing-system/issues).
+Contributions, issues, and feature requests are welcome! 
 
 1. Fork the project
 2. Create your feature branch: `git checkout -b feature/amazing-feature`
