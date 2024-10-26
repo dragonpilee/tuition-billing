@@ -1,69 +1,69 @@
 
 # Tuition Billing System
 
-A streamlined solution for managing tuition billing with ease. The **Tuition Billing System** allows teachers to input student details, calculate session fees based on hourly rates, and generate professional PDF invoices. It supports tracking previous balances and automatically calculates grand totals. 
+This is a simple web-based application for managing student tuition billing. It allows a tutor to record hours worked for a student, calculate the total bill, and generate a PDF invoice for the tuition fee details. The application also locks student details and restricts the date input to the selected month for ease of use.
 
+## Features
 
-## ✨ Features
+- **Student Details**: Input the student name, previous balance, and hourly rate.
+- **Date and Hours Tracking**: Add, update, or delete work entries with the date and number of hours worked.
+- **Monthly Restriction**: The date picker is restricted to the selected month to avoid errors.
+- **Summary**: View total hours worked, total bill, and the grand total, including any previous balance.
+- **PDF Generation**: Create a detailed PDF invoice for the student, including all the billing details and a digital signature.
+  
+## Technologies Used
 
-- **Student Information Lock**: Safeguard student details to prevent accidental changes.
-- **Dynamic Session Entries**: Add, edit, or delete tuition session entries with ease.
-- **Customizable Hourly Rates**: Select from a range of predefined hourly rates.
-- **Previous Balance Handling**: Add a previous balance (if any) and include it in the total.
-- **Automatic PDF Generation**: Generate professional invoices in PDF format.
-- **Responsive Design**: Fully responsive for desktop and mobile devices.
+- **HTML5**: For structuring the application.
+- **CSS3**: For styling the user interface.
+- **JavaScript**: For handling the form input logic, calculations, and PDF generation.
+- **Bootstrap 4**: For responsive design and pre-built components.
+- **jsPDF**: To generate PDF files from the billing data.
+- **jsPDF-AutoTable**: To create tables in the generated PDFs.
 
-## 🛠️ Technologies
+## Installation
 
-- HTML5 & CSS3
-- JavaScript (with jsPDF & AutoTable libraries)
-- Bootstrap 4.5
-
-
-
-## 📦 Installation & Setup
-
-To run this project locally, follow these steps:
-
-1. **Clone the repository:**
+1. **Download or Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/tuition-billing-system.git
+   git clone <repository-url>
    cd tuition-billing-system
    ```
 
-2. **Open the project:**
+2. **Open the `index.html` file** in your browser.
 
-   Simply open the `index.html` file in your browser, or serve the project locally with a simple HTTP server like `live-server`:
+   This application is client-side only, so no server is required. Simply open the `index.html` file in a browser to run the app.
 
-   ```bash
-   npm install -g live-server
-   live-server
-   ```
+## Usage
 
-## 📚 Usage
+1. **Enter Student Details**: Fill in the student’s name, previous balance (if any), and select the rate per hour from the dropdown.
+   
+2. **Lock Details**: After entering the student’s information, click the "Lock Details" button. This will lock the student’s information to prevent accidental changes.
+   
+3. **Select a Month**: Choose the month for which you want to record hours worked.
+   
+4. **Add Work Entries**: For each workday, select the date (which will be restricted to the selected month) and enter the number of hours worked.
+   
+5. **View Summary**: The total hours worked, total bill, and grand total will update automatically as you add entries.
 
-1. **Enter Student Details**: Fill in the student's name and select the hourly rate.
-2. **Input Sessions**: Add session dates and hours worked.
-3. **Include Previous Balance** (if applicable): Enter any outstanding balance from previous months.
-4. **Generate PDF Invoice**: Automatically generate a PDF invoice with the click of a button.
+6. **Generate PDF**: Once you've finished adding entries, click "Save as PDF" to generate a detailed bill for the student, including hours worked and total amounts.
 
+## Example
 
+![Screenshot of Application](screenshot.png)
 
-## 🧑‍💻 Contributing
+## File Structure
 
-Contributions, issues, and feature requests are welcome! 
+- **index.html**: The main HTML file that includes the form and table for entering and displaying the tuition details.
+- **styles.css**: The CSS file for styling the application layout and components.
+- **script.js**: The JavaScript file that contains all the form handling, calculations, table management, and PDF generation logic.
 
-1. Fork the project
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add some amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a pull request
+## License
 
-## 🌐 License
+This project is licensed under the MIT License. You are free to use, modify, and distribute it as you see fit.
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+## Contact
 
-## 🎓 Credits
+For any queries, feel free to contact:
 
-Project developed by **Alan Cyril**.
+**Alan Cyril Sunny**  
+[GitHub](https://github.com/dragonpilee)
