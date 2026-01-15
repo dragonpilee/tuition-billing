@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  tuition-billing:
+    image: node:20-slim
+    container_name: tuition-billing
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "4321:4321"
+    command: npm run dev
+    environment:
+      - NODE_ENV=development

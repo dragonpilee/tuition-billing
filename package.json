@@ -1,0 +1,28 @@
+{
+  "name": "tuition-billing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4321",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4321"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.462.0",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "tailwindcss": "^3.4.15",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20"
+  }
+}
